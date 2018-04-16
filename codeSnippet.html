@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>代码片段</h3>
+
+    <script>
+    //生成6位数字验证码
+
+// 方法一
+
+('000000'+ Math.floor(Math.random() *  999999)).slice(-6);
+
+
+// 方法二
+
+Math.random().toString().slice(-6);
+
+
+// 方法三
+
+Math.random().toFixed(6).slice(-6);
+
+
+// 方法四
+
+''+ Math.floor(Math.random() * 999999);
+    </script>
+</body>
+</html>
